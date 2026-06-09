@@ -110,6 +110,7 @@ if(isset($_GET['cari'])){
     padding:8px 12px;
     border-radius:8px;
     text-decoration:none;
+    margin-left:10px;
 }
 
 .bottom-nav{
@@ -145,7 +146,11 @@ if(isset($_GET['cari'])){
 body{
     padding-bottom:100px;
 }
-
+.aksi{
+    display:inline-flex;
+    gap: 12px;
+    margin: left 20px;
+}
 </style>
 
 </head>
@@ -213,6 +218,7 @@ htmlspecialchars($row['isi_catatan']),
 <?= $row['mood']; ?>
 </span>
 
+<div class="aksi">
 <a
 href="edit_catatan.php?id=<?= $row['id_catatan'] ?>"
 class="edit">
@@ -225,7 +231,7 @@ class="delete"
 onclick="return confirm('Hapus catatan ini?')">
 Hapus
 </a>
-
+</div>
 </div>
 
 </div>

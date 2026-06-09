@@ -191,6 +191,7 @@ readonly>
 <option value=" Sedih"> Sedih</option>
 <option value=" Marah"> Marah</option>
 <option value=" Semangat"> Semangat</option>
+<option value=" Bingung"> Bingung</option>
 
 </select>
 
